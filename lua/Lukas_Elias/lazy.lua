@@ -11,4 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup('Lukas_Elias.plugins')
+require("lazy").setup({
+  { import = 'Lukas_Elias.plugins' },
+  { import = 'Lukas_Elias.plugins.lsp' },
+})

@@ -1,4 +1,4 @@
-return ({
+return {
   'nvim-telescope/telescope.nvim',
   branch = '0.1.x',
   dependencies = {
@@ -12,7 +12,7 @@ return ({
       --       refer to the README for telescope-fzf-native for more instructions.
       build = 'make',
       cond = function()
-        return vim.fn.executable 'make' == 1
+        return vim.fn.executable('make')== 1
       end,
     },
   },
@@ -30,4 +30,4 @@ return ({
     -- Enable telescope fzf native, if installed
     pcall(require('telescope').load_extension, 'fzf')
   end
-})
+}

@@ -22,7 +22,7 @@ vim.opt.smartcase = true
 
 vim.wo.signcolumn = 'yes'
 
-vim.opt.updatetime = 750
+vim.opt.updatetime = 350
 vim.opt.timeoutlen = 300
 
 vim.opt.completeopt = {

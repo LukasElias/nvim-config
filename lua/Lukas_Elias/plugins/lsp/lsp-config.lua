@@ -1,7 +1,8 @@
 return {
-  'neovim/nvim-lspconfig',
-  dependencies = {
-    'j-hui/fidget.nvim',
-    'folke/neodev.nvim',
-  },
+	'neovim/nvim-lspconfig',
+    event = { 'BufReadPre', 'BufNewFile' },
+	dependencies = {
+		'j-hui/fidget.nvim',
+		'folke/neodev.nvim',
+	},
 }

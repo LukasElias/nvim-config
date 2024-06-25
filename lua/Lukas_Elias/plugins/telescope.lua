@@ -6,7 +6,6 @@ return {
 		-- Fuzzy Finder Algorithm which requires local dependencies to be built.
 		-- Only load if `make` is available. Make sure you have the system
 		-- requirements installed.
-		'BurntSushi/ripgrep',
 		{
 			'nvim-telescope/telescope-fzf-native.nvim',
 			-- NOTE: If you are having trouble with this installation,
@@ -29,6 +28,8 @@ return {
 	},
 	config = function()
 		pcall(require('telescope').load_extension, 'fzf')
+		pcall(require('telescope').load_extension, 'rg')
+		pcall(require('telescope').load_extension, 'fd')
 
 		local builtin = require('telescope.builtin')
 		if builtin then

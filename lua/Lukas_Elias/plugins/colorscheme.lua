@@ -5,11 +5,11 @@ return {
 	config = function()
 		require("catppuccin").setup({
 			flavour = "mocha", -- latte, frappe, macchiato, mocha
-			background = {     -- :h background
+			background = { -- :h background
 				light = "latte",
 				dark = "mocha",
 			},
-			show_end_of_buffer = false,     -- shows the '~' characters after the end of buffers
+			show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
 			dim_inactive = {
 				enabled = true,
 				shade = "dark",

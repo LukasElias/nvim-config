@@ -13,7 +13,7 @@ return {
 			dim_inactive = {
 				enabled = true,
 				shade = "dark",
-				percentage = 1.0,
+				percentage = 0.5,
 			},
 			no_italic = false,
 			no_bold = false,
